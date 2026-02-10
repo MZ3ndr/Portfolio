@@ -1,22 +1,348 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Hello, World!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Marc Zender — Game Dev / Backend Dev Portfolio" />
+  <title>Marc Zender | Game Dev / Backend Dev</title>
+
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-  <div class="header">
+  <!-- Background effects -->
+  <div class="bg-glow" aria-hidden="true"></div>
 
-  </div>
-  <div class="main">
-    <div class="name">
-      <h1>Hey, iam </h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">MZ</span>
+        <span class="brand-text">Marc Zender</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="chip" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+          <span class="dot"></span> MZ3ndr on GitHub
+        </a>
+
+        <button class="btn-icon" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </button>
+
+        <button class="btn-icon burger" id="menuToggle" type="button" aria-label="Open menu" title="Open menu">
+          ☰
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="footer">
 
-  </div>
+    <!-- Mobile menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="kicker">Game Dev • Backend Dev</p>
+          <h1>
+            Hi, I’m <span class="accent">Marc Zender</span>.
+            <br />
+            I build systems — and games — that feel alive.
+          </h1>
+
+          <p class="lead">
+            I’m a German software engineer who programs for fun because I love seeing what
+            a few lines of code can do — and how they can improve someone’s everyday life.
+            I started coding in 2022 and taught myself along the way. That came with setbacks,
+            but it also taught me the most important thing: you never “finish” learning — you keep
+            improving through feedback, iteration, and better ideas.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">2022</div>
+              <div class="stat-label">Started programming</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Node/Express</div>
+              <div class="stat-label">Backend focus</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">C++</div>
+              <div class="stat-label">Game development</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="card glass">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">MZ</div>
+              <div>
+                <div class="card-title">Marc Zender</div>
+                <div class="card-subtitle">Game Dev / Backend Dev</div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="info-row">
+                <span class="label">GitHub</span>
+                <a class="value link" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+                  github.com/MZ3ndr
+                </a>
+              </div>
+
+              <div class="info-row">
+                <span class="label">Discord</span>
+                <button class="value copy" type="button" data-copy="marcus25525">
+                  marcus25525 <span class="copy-hint">(copy)</span>
+                </button>
+              </div>
+
+              <div class="divider"></div>
+
+              <p class="small">
+                Interested in clean backend architecture, practical tooling, and game systems.
+                Always learning — always shipping.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">Backend</span>
+                <span class="tag">Game Dev</span>
+                <span class="tag">Systems</span>
+                <span class="tag">Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hint">
+            <span class="pulse" aria-hidden="true"></span>
+            Scroll to explore
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p>
+            I like turning ideas into something real — from server-side workflows to game mechanics.
+            I care about clarity, maintainability, and making things “feel right”.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>How I work</h3>
+            <ul class="list">
+              <li>Build a stable baseline, then iterate fast.</li>
+              <li>Prefer readable architecture over clever hacks.</li>
+              <li>Performance matters — but only after correctness.</li>
+              <li>Feedback-driven improvement (including critique).</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>What I’m into</h3>
+            <ul class="list">
+              <li>Backend services, APIs, tooling</li>
+              <li>Game systems, simulation, balancing</li>
+              <li>Learning new languages and patterns</li>
+              <li>Building projects that teach me “real” production habits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p>My current toolkit (and what I’m actively improving).</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-title">Frontend</div>
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-title">Backend</div>
+            <div class="pill-row">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-title">Languages</div>
+            <div class="pill-row">
+              <span class="pill">C++</span>
+              <span class="pill">Python</span>
+              <span class="pill">Rust (a bit)</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-title">Mindset</div>
+            <div class="pill-row">
+              <span class="pill">Iterative dev</span>
+              <span class="pill">Debugging</span>
+              <span class="pill">Learning</span>
+              <span class="pill">Clean structure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p>A few things I’m building to learn, ship, and level up.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Flownode</h3>
+              <span class="badge">Node.js • Express</span>
+            </div>
+            <p>
+              A learning project focused on working with Node.js/Express on real servers and
+              production-like workflows — deployment, stability, and clean endpoints.
+            </p>
+            <div class="project-actions">
+              <a class="btn small ghost" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>BalanceBox</h3>
+              <span class="badge warn">Work in progress</span>
+            </div>
+            <p>
+              A (not finished) website app using Node.js/Express for personal finance tracking.
+              I’m using it to learn structure, data flow, and practical UX for monitoring budgets.
+            </p>
+            <div class="project-actions">
+              <a class="btn small ghost" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Annnno</h3>
+              <span class="badge">C++ • Game Dev</span>
+            </div>
+            <p>
+              An Anno-inspired game developed with another dev in C++. Focus: systems, progression,
+              and making gameplay loops that feel satisfying.
+            </p>
+            <div class="project-actions">
+              <a class="btn small ghost" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>Best ways to reach me.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Online</h3>
+            <div class="contact-list">
+              <a class="contact-item" href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/MZ3ndr</span>
+              </a>
+
+              <button class="contact-item copy" type="button" data-copy="marcus25525">
+                <span class="contact-label">Discord</span>
+                <span class="contact-value">marcus25525 (click to copy)</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Quick message (no backend)</h3>
+            <p class="small">
+              This form doesn’t send anything automatically (no server). It’ll open your mail client with a prefilled draft.
+            </p>
+
+            <form id="mailForm" class="form">
+              <label>
+                <span>Subject</span>
+                <input type="text" name="subject" placeholder="Project / question / collaboration" required />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">Create Email Draft</button>
+              <p class="tiny" id="formHint" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Marc Zender</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="https://github.com/MZ3ndr" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="index.js"></script>
 </body>
 </html>
